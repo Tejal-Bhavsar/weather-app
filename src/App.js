@@ -35,7 +35,7 @@ function App() {
      <div className="maindiv">
        <form onSubmit={getSearch}>
         <input className="searchinput"
-        placeholder="search" 
+        placeholder="enter city name" 
         type="text"
         value={search}
         onChange={(e) => setSearch(e.target.value)}
@@ -62,7 +62,7 @@ function App() {
             </div>
           </div>
         </div>
-        : "enter the city name"
+        : "<h3>enter the city name</h3>"
       }
 
      </div>
