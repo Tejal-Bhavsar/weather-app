@@ -49,15 +49,27 @@ function App() {
           <div className="location-box">
             <div className="location">{weather.name}<p>{weather.sys.country}</p></div>
             
-            <div className="date">date {} </div>
+            {/* <div className="date">date {} </div> */}
             
 
             <div className="weather-box">
               <div className="temp"> {weather.main.temp}°c</div>
 
+              {/* <div  className="minmax">
+                <p><span>⬆{weather.main.feelslike}</span>
+                   <span>⬇{weather.main.max}</span>
+                </p>
+              </div> */}
+              <div className="description">
+                
+              </div>
+
               <div className="weather">
-                <p>{weather.weather[0].main}</p>
-                <p>{weather.weather[0].description}</p>
+                <p>Humidity: &ensp;{weather.main.humidity} </p>
+                <p>Pressure: &ensp;{weather.main.pressure} </p>
+                <p>discription:&ensp;{weather.weather[0].main}</p>
+                <p>Wind: &ensp;{weather.wind.speed} </p>
+                
               </div>
             </div>
           </div>

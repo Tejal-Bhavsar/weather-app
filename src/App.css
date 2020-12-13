@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Barlow);
  *{
    margin: 0%;
    padding: 0%;
@@ -10,12 +11,13 @@
 
 
   body {
-    font-family: 'monster', sans-serif;
+    font-family: 'Barlow', sans-serif;
     background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
     object-fit: fill;
     height: 100vh;
   }
   .App {
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
     display: flex;
     justify-content: center;
      
@@ -95,6 +97,9 @@
     text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
   }
   
+  .weather p {
+    margin-top: 0.7em;
+  }
   .location {
     font-size: 4em;
   }
@@ -109,6 +114,9 @@
     html {
       font-size: 45%;
     }
+    .search-btn {
+      padding: 0.8em 2em;
+    }
   }
 
   @media only screen  and (max-width: 375px){
@@ -116,6 +124,9 @@
       font-size: 38%;
     }
     .weather-box .temp {
-      font-size: 3em;
+      font-size: 6em;
+    }
+    .search-btn {
+      padding: 0.8em 2em;
     }
   }
