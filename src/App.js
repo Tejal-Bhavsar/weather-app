@@ -74,7 +74,7 @@ function App() {
             </div>
           </div>
         </div>
-        : "<h3>enter the city name</h3>"
+        : "<h3>Enter the city name.....</h3>"
       }
 
      </div>
