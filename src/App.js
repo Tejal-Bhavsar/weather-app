@@ -28,6 +28,22 @@ function App() {
     
   }
 
+  // Debjit's contribution starts---------------------------------------------------------------------------
+
+  const dateBuilder = (d) =>{
+    let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
+    let day = days[d.getDay()];
+    let month = months[d.getMonth()];
+    let date = d.getDate();
+    let year = d.getFullYear();
+
+    return `${day}, ${date} ${month}, ${year}`
+  }
+
+  // Debjit's contribution ends---------------------------------------------------------------------------
+
   
   return (
 
@@ -48,8 +64,15 @@ function App() {
         <div className="weather-wrap">
           <div className="location-box">
             <div className="location">{weather.name}<p>{weather.sys.country}</p></div>
+
+
+            {/*Debjit's contribution starts---------------------------------------------------------------------------*/ } 
+
+            <div className="date">{dateBuilder(new Date())}</div>
+
+            {/*Debjit's contribution starts---------------------------------------------------------------------------*/ } 
+
             
-            {/* <div className="date">date {} </div> */}
             
 
             <div className="weather-box">
